@@ -25,13 +25,20 @@ Mở khóa tiềm năng học tập của bạn
 * Mở project backend bằng Intellij
 (https://github.com/TranKimHoang17102003/KoolApp/blob/main/BackEnd/syntaxCreateTable.sql)
 * Uỷ quyền thông tin xác thực cho một ứng dụng dành cho máy tính
-- Trong bảng điều khiển của Google Cloud, hãy chuyển đến Trình đơn menu > API và dịch vụ > Thông tin xác thực.
-- Nhấp vào Tạo thông tin xác thực > Mã ứng dụng khách OAuth.
-- Nhấp vào Loại ứng dụng > Ứng dụng dành cho máy tính.
-- Trong trường Tên, hãy nhập tên cho thông tin xác thực. Tên này chỉ hiển thị trong bảng điều khiển Google Cloud.
-- Nhấp vào Tạo. Màn hình tạo ứng dụng OAuth xuất hiện, hiển thị mã ứng dụng khách và mật khẩu ứng dụng khách mới của bạn.
-- Nhấp vào OK. Thông tin xác thực mới tạo xuất hiện trong mục Mã ứng dụng khách OAuth 2.0.
-- Lưu tệp JSON đã tải xuống dưới dạng credentials.json và chuyển tệp đó vào thư mục đang hoạt động src/main/java src/main/resources.
+Trong bảng điều khiển của Google Cloud, hãy chuyển đến Trình đơn menu > API và dịch vụ > Thông tin xác thực.
+<br>
+Nhấp vào Tạo thông tin xác thực > Mã ứng dụng khách OAuth.
+<br>
+Nhấp vào Loại ứng dụng > Ứng dụng dành cho máy tính.
+<br>
+Trong trường Tên, hãy nhập tên cho thông tin xác thực. Tên này chỉ hiển thị trong bảng điều khiển Google Cloud.
+<br>
+Nhấp vào Tạo. Màn hình tạo ứng dụng OAuth xuất hiện, hiển thị mã ứng dụng khách và mật khẩu ứng dụng khách mới của bạn.
+<br>
+Nhấp vào OK. Thông tin xác thực mới tạo xuất hiện trong mục Mã ứng dụng khách OAuth 2.0.
+<br>
+Lưu tệp JSON đã tải xuống dưới dạng credentials.json và chuyển tệp đó vào thư mục đang hoạt động src/main/java src/main/resources.
+<br>
 * Chạy và test Api bằng Postman
 Export file json: (https://github.com/TranKimHoang17102003/KoolApp/blob/main/BackEnd/AppKool.postman_collection.json)
 
