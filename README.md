@@ -52,3 +52,4 @@ Tải và chạy Kool - Front End:
 * Vì một số lý do về công nghệ mà nhóm chưa kết hợp được front end và back end
 * Về phần riêng của back-end và front-end thì chạy độc lập cơ bản đã hoàn thành 
 * Nhóm sẽ cố gắng nghiên cứu và kết hợp lại để có thể có sản phẩm sớm nhất và tốt nhất
+
