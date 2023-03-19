@@ -31,4 +31,5 @@ Mở khóa tiềm năng học tập của bạn
 - Nhấp vào OK. Thông tin xác thực mới tạo xuất hiện trong mục Mã ứng dụng khách OAuth 2.0.
 - Lưu tệp JSON đã tải xuống dưới dạng credentials.json và chuyển tệp đó vào thư mục đang hoạt động src/main/java src/main/resources.
 * Chạy và test Api bằng Postman
-Export file: 
+Export file json: (https://github.com/TranKimHoang17102003/KoolApp/blob/main/BackEnd/AppKool.postman_collection.json)
+
