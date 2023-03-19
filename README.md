@@ -14,9 +14,11 @@
 Mở khóa tiềm năng học tập của bạn
 
 
+## UI-UX
+*Link: (https://www.figma.com/file/s0xX9EKRuuOgeG2pZviI1c/KOOL?node-id=310%3A1635&t=sVnWyO5opTbp8ILt-1)
 
 
-## Tạo database Kool
+## Back end
 
 * Tạo database trong Postgresql
 * Tạo các bảng cần cho dự án
@@ -33,3 +35,13 @@ Mở khóa tiềm năng học tập của bạn
 * Chạy và test Api bằng Postman
 Export file json: (https://github.com/TranKimHoang17102003/KoolApp/blob/main/BackEnd/AppKool.postman_collection.json)
 
+## Front end
+Tải và chạy Kool - Front End:
+- Dowload và mở đoạn code với vscode, đảm bảo thiết bị có cài đặt và chạy được flutter.
+- Vào thư mục lib và chỉnh sửa file server_.dartip và thay đổi thành địa chỉ Ip của máy bạn
+* Lưu ý: trước khi chạy Front End cần chạy kool - Back 
+
+## Kết luận
+* Vì một số lý do về công nghệ mà nhóm chưa kết hợp được front end và back end
+* Về phần riêng của back-end và front-end thì chạy độc lập cơ bản đã hoàn thành 
+* Nhóm sẽ cố gắng nghiên cứu và kết hợp lại để có thể có sản phẩm sớm nhất và tốt nhất
