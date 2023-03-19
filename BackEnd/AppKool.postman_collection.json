@@ -1,0 +1,386 @@
+{
+	"info": {
+		"_postman_id": "9039c2fd-058a-4341-80da-9e4d00273915",
+		"name": "AppKool",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25992273"
+	},
+	"item": [
+		{
+			"name": "Đăng kí",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tran Kim Hoang\",\r\n    \"email\": \"trankimhoang1234556@gmai.com\",\r\n    \"userName\": \"hoang123456\",\r\n    \"password\": \"123456\",\r\n    \"checkPassword\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Đăng nhập",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"hoang1k2345\",\r\n    \"password\": \"12k3456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Thông tin User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/home/{iduser}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"home",
+						"{iduser}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sửa thông tin User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/home/{iduser}/edit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"home",
+						"{iduser}",
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tạo chủ đề (thư mục)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"topic\": \"Math\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/home/{iduser}/note/savecategory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"home",
+						"{iduser}",
+						"note",
+						"savecategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Danh sách topic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/home/{iduser}/note/listallcategoryluser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"home",
+						"{iduser}",
+						"note",
+						"listallcategoryluser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Danh sách ghi chú của một topic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/home/{iduser}/listallnotedetailuser/{idthumuc}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"home",
+						"{iduser}",
+						"listallnotedetailuser",
+						"{idthumuc}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tạo ghi chú",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"topic\": \"English\",\r\n    \"level\": 3,\r\n    \"header\": \"Chó duyên\",\r\n    \"contentNote\": \"Dog: con chó\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/home/{iduser}/note/savenote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"home",
+						"{iduser}",
+						"note",
+						"savenote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Danh sách ghi chú",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0cmFudmFudGVvIiwiaWF0IjoxNjc4MTc4NjE2LCJleHAiOjE2NzgxODAwNTZ9.uM629KzGAGSqfQA_hXtgweKyCt6A0dV5FI1qsfKyHU0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/home/{iduser}/note/listallnotedetail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"home",
+						"{iduser}",
+						"note",
+						"listallnotedetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Xem một ghi chú",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/home/{iduser}/note/{idthumuc}/notedetail/{idnote}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"home",
+						"{iduser}",
+						"note",
+						"{idthumuc}",
+						"notedetail",
+						"{idnote}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cập nhật ghi chú",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"topic\": \"test1\",\r\n    \"level\": 2,\r\n    \"header\": \"Tôi là Kim Hoàng\",\r\n    \"contentNote\": \"Chúng tôi sẽ chiến đấu hết mình trong cuộc thi Hackathon!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/home/{iduser}/note/{idthumuc}/note{idthumuc}/notedetail/{idnote}/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"home",
+						"{iduser}",
+						"note",
+						"{idthumuc}",
+						"note{idthumuc}",
+						"notedetail",
+						"{idnote}",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Xóa thư mục ghi chú",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/home/{iduser}/note/deletecategory/{idthumuc}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"home",
+						"{iduser}",
+						"note",
+						"deletecategory",
+						"{idthumuc}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Xóa ghi chú",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/home/{iduser}/note/{idthumuc}/deletenote/{idnote}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"home",
+						"{iduser}",
+						"note",
+						"{idthumuc}",
+						"deletenote",
+						"{idnote}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Danh sách ghi chú cần học của một topic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/home/{iduser}/review/{idcategory}/listallidnotedetail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"home",
+						"{iduser}",
+						"review",
+						"{idcategory}",
+						"listallidnotedetail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

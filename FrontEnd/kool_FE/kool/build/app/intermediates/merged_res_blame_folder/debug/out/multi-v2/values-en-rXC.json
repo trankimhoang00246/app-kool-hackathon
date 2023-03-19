@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.kool.app-mergeDebugResources-17:/values-en-rXC/values-en-rXC.xml",
+            "map": [
+                {
+                    "source": "/home/phamhuynhanh/.gradle/caches/transforms-3/f9774e7e875d5fd39dde358c99caf82e/transformed/core-1.8.0/res/values-en-rXC/values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "203",
+                        "endOffsets": "254"
+                    }
+                }
+            ]
+        }
+    ]
+}

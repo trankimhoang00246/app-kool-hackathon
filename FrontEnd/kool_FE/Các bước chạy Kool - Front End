@@ -1,0 +1,4 @@
+Tải và chạy Kool - Front End:
+- Dowload và mở đoạn code với vscode, đảm bảo thiết bị có cài đặt và chạy được flutter.
+- Vào thư mục lib và chỉnh sửa file server_.dartip và thay đổi thành địa chỉ Ip của máy bạn
+* Lưu ý: trước khi chạy Front End cần chạy kool - Back 
